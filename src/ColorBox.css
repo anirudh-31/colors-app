@@ -5,9 +5,15 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-bottom: -3.5px;
+  margin-bottom: -7px;
 }
-.copy-button {
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.copy-button,
+.back-button {
   width: 100px;
   height: 30px;
   position: absolute;
@@ -24,15 +30,26 @@
   color: white;
   text-transform: uppercase;
   border: none;
+}
+.copy-button {
   opacity: 0;
 }
+
+.ColorBox .dark-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.light-text {
+  color: white;
+}
+
 .ColorBox:hover .copy-button {
   opacity: 1;
   transition: 0.5s;
 }
 .box-content {
   position: absolute;
-  width: 100%;
+  width: 90%;
   left: 0px;
   bottom: 0px;
   padding: 10px;
@@ -48,7 +65,7 @@
   right: 0px;
   bottom: 0px;
   color: white;
-  width: 60px;
+  width: 50px;
   height: 30px;
   text-align: center;
   line-height: 30px;
@@ -107,4 +124,12 @@
 .copy-msg p {
   font-size: 2rem;
   font-weight: 100;
+}
+
+.ColorPalette .ColorBox {
+  height: 50%;
+}
+
+.ColorBox.goBack {
+  background-color: #000;
 }
