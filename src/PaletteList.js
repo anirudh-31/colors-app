@@ -12,7 +12,7 @@ const styles = {
     /* background by SVGBackgrounds.com */
     backgroundColor: "#394bad",
     // backgroundImage: `url(${bg})`,
-    overflow: "scroll",
+    overflowY: "scroll",
   },
   container: {
     width: "50%",
